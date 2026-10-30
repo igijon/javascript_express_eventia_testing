@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f5f5f2;
+  color: #292929;
+  font:
+    15px Arial,
+    sans-serif;
+}
+header {
+  height: 70px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0 max(calc((100% - 1050px) / 2), 20px);
+  gap: 35px;
+  border-bottom: 1px solid #ddd;
+}
+.brand {
+  font-size: 25px;
+  font-weight: bold;
+  color: #292929;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+a {
+  color: #555;
+  text-decoration: none;
+}
+#session {
+  margin-left: auto;
+  color: #777;
+  font-size: 13px;
+}
+main {
+  max-width: 1050px;
+  margin: auto;
+}
+.hero {
+  margin: 35px 0;
+  background: #e8e7e0;
+  border-radius: 15px;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.1;
+}
+.hero p {
+  color: #666;
+}
+.hero aside,
+.panel,
+.card {
+  background: white;
+  border: 1px solid #e5e5e0;
+  border-radius: 12px;
+  padding: 22px;
+}
+.hero aside {
+  min-width: 210px;
+}
+.panel,
+main > section:not(.hero) {
+  margin: 25px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 18px;
+}
+.card h3 {
+  margin: 10px 0;
+}
+.card p {
+  color: #777;
+  line-height: 1.5;
+}
+input {
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 5px;
+}
+button {
+  padding: 11px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #292929;
+  color: white;
+  cursor: pointer;
+}
+.card button {
+  margin-top: 12px;
+}
+#event-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer {
+  text-align: center;
+  padding: 35px;
+  color: #999;
+}
+@media (max-width: 700px) {
+  .hero {
+    margin: 15px;
+    display: block;
+    padding: 25px;
+  }
+  .hero aside {
+    margin-top: 20px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  main > section:not(.hero) {
+    margin: 15px;
+  }
+  header {
+    gap: 12px;
+    padding: 0 12px;
+  }
+  #session {
+    display: none;
+  }
+}

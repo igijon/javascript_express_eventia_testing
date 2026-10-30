@@ -1,0 +1,12 @@
+{
+  "name": "eventia-frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vite": "^6.1.0"
+  }
+}

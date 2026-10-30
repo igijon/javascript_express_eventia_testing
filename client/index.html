@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Eventia | Eventos y reservas</title>
+  </head>
+  <body>
+    <header>
+      <a class="brand">eventia.</a>
+      <nav>
+        <a href="#events">Eventos</a><a href="#reservations">Mis reservas</a>
+      </nav>
+      <span id="session">No has iniciado sesión</span>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <small>DESCUBRE · PARTICIPA · CONECTA</small>
+          <h1>Experiencias que<br />merecen un sitio.</h1>
+          <p>
+            Encuentra eventos, reserva tu plaza y comparte lo que te interesa.
+          </p>
+        </div>
+        <aside>
+          <small>PRÓXIMO EVENTO</small>
+          <h2>20 NOV</h2>
+          Jornada de desarrollo web
+        </aside>
+      </section>
+      <section class="panel">
+        <h2>Acceso a Eventia</h2>
+        <form id="login-form">
+          <input
+            id="email"
+            type="email"
+            value="ana@eventia.local"
+            required
+          /><input
+            id="password"
+            type="password"
+            value="usuario123"
+            required
+          /><button>Iniciar sesión</button>
+        </form>
+        <p id="login-message"></p>
+        <small
+          >Usuario: ana@eventia.local / usuario123 · Admin: admin@eventia.local
+          / admin123</small
+        >
+      </section>
+      <section id="events">
+        <h2>Próximos eventos</h2>
+        <input id="search" placeholder="Buscar eventos" />
+        <div id="event-list" class="grid"></div>
+      </section>
+      <section id="reservations" class="panel">
+        <h2>Mis reservas</h2>
+        <button id="load-reservations">Consultar reservas</button>
+        <div id="reservation-list"></div>
+      </section>
+      <section class="panel">
+        <h2>Crear evento</h2>
+        <form id="event-form">
+          <input name="title" placeholder="Título" required /><input
+            name="date"
+            type="date"
+            required
+          /><input name="venue" placeholder="Lugar" required /><input
+            name="capacity"
+            type="number"
+            placeholder="Aforo"
+            required
+          /><input
+            name="description"
+            placeholder="Descripción"
+            required
+          /><button>Publicar evento</button>
+        </form>
+        <p id="admin-message"></p>
+      </section>
+    </main>
+    <footer>EVENTIA · Entorno didáctico de auditoría de seguridad</footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
